@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.background-image {
+    height: 100vh;
+    background-color: rgba(245, 245, 220, 0.5);
+    background-image: url(../img/background.jpg);
+    background-size: 100% 100%;  
+}
+
+.social-buttons {
+    position: absolute; 
+    bottom: 10%; /* Default bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.social-buttons a {
+    display: block;
+    margin: 10px 0;
+    width: 150px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.5); 
+    border-radius: 15px; 
+    padding: 7px; 
+    font-size: 1.1em; 
+    color: #333; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    transition: all 0.3s ease; 
+}
+
+.social-buttons a:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+/* Adjust position for different screen sizes */
+@media (max-height: 1500px) {
+    .social-buttons {
+        bottom: 15%; /* Adjust for medium height screens */
+    }
+}
+
+@media (max-height: 900px) {
+    .social-buttons {
+        bottom: 10%; /* Further adjust for small height screens */
+    }
+}
+
+@media (max-height: 639px) {
+    .social-buttons {
+        bottom: 4%; /* Minimal bottom space for very small height screens */
+    }
+}
+
+
+@media (min-width: 900px) {
+    .background-image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
