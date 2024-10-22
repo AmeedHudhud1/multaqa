@@ -7,7 +7,8 @@ html, body {
     height: 100vh;
     background-color: rgba(245, 245, 220, 0.5);
     background-image: url(../img/background.jpg);
-    background-size: 100% 100%;  
+    background-size: contain;  
+    background-repeat: no-repeat;
 }
 
 .social-buttons {
@@ -39,6 +40,7 @@ html, body {
 
 .icon {
     margin-right: 8px;
+    
 }
 
 /* Adjust position for different screen sizes */
