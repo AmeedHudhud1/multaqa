@@ -7,8 +7,7 @@ html, body {
     height: 100vh;
     background-color: rgba(245, 245, 220, 0.5);
     background-image: url(../img/background.jpg);
-    background-size: contain;  
-    background-repeat: no-repeat;
+    background-size: 100% 100%;  
 }
 
 .social-buttons {
@@ -20,16 +19,16 @@ html, body {
 }
 
 .social-buttons a {
-    display: block;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align icon to left and text to right */
+    align-items: center; /* Center items vertically */
     margin: 10px 0;
-    width: 150px;
+    width: 200px; /* Adjust width as needed */
     text-decoration: none;
     border: 1px solid rgba(0, 0, 0, 0.5); 
     border-radius: 15px; 
-    padding: 7px; 
-    font-size: 1.1em; 
-    color: #333; 
-    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; /* Text color */
+    background-color: rgba(164, 156, 137, 0.6);
     transition: all 0.3s ease; 
 }
 
@@ -39,9 +38,9 @@ html, body {
 }
 
 .icon {
-    margin-right: 8px;
-    
+    margin-right: 8px; /* Add space between icon and text */
 }
+
 
 /* Adjust position for different screen sizes */
 @media (max-height: 1500px) {
@@ -63,7 +62,7 @@ html, body {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     .background-image {
         background-position: center;
         background-repeat: no-repeat;
