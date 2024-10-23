@@ -12,22 +12,22 @@ html, body {
 
 .social-buttons {
     position: absolute; 
-    bottom: 10%; /* Default bottom position */
+    bottom: 10%;
     left: 50%;
      transform: translateX(-50%);
     text-align: center;
 }
 
 .social-buttons a {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Align icon to left and text to right */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
     text-decoration: none;
     border: 1px solid rgba(0, 0, 0, 0.5); 
     border-radius: 15px; 
-    color: #333; /* Text color */
+    color: #333;
     background-color: rgba(164, 156, 137, 0.6);
 
 }
@@ -37,26 +37,24 @@ html, body {
 }
 
 .icon {
-    margin-right: 8px; /* Add space between icon and text */
+    margin-right: 8px;
 }
 
-
-/* Adjust position for different screen sizes */
 @media (max-height: 1500px) {
     .social-buttons {
-        bottom: 15%; /* Adjust for medium height screens */
+        bottom: 15%;
     }
 }
 
 @media (max-height: 900px) {
     .social-buttons {
-        bottom: 10%; /* Further adjust for small height screens */
+        bottom: 10%;
     }
 }
 
 @media (max-height: 639px) {
     .social-buttons {
-        bottom: 4%; /* Minimal bottom space for very small height screens */
+        bottom: 4%;
     }
 }
 
