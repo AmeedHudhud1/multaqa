@@ -1,4 +1,3 @@
-
 html, body {
     height: 100%;
     margin: 0;
@@ -13,7 +12,7 @@ html, body {
 
 .social-buttons {
     position: absolute;
-    bottom: 0%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -42,7 +41,7 @@ html, body {
 
 @media (max-height: 639px) {
     .social-buttons {
-        bottom: 0%;
+        bottom: 1%;
     }
 }
 
@@ -52,27 +51,3 @@ html, body {
         background-repeat: no-repeat;
         background-size: contain;
     }
-}
-
-@media (max-width: 599px) {
-    .background-image {
-        height: auto;
-        min-height: 100vh;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 20px 0 60px;
-        box-sizing: border-box;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .social-buttons {
-        position: static;
-        transform: none;
-        left: auto;
-        bottom: auto;
-    }
-}
