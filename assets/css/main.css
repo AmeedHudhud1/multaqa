@@ -53,3 +53,27 @@ html, body {
         background-size: contain;
     }
 }
+
+
+@media (max-width: 599px) {
+    .background-image {
+        height: auto;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 20px 0 10px;
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .social-buttons {
+        position: static;
+        transform: none;
+        left: auto;
+        bottom: auto;
+    }
+}
