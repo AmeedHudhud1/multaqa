@@ -54,7 +54,6 @@ html, body {
     }
 }
 
-
 @media (max-width: 599px) {
     .background-image {
         height: auto;
@@ -63,7 +62,7 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        padding: 20px 0 10px;
+        padding: 20px 0 40px;
         box-sizing: border-box;
         background-size: cover;
         background-position: center;
